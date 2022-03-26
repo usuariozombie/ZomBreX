@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="jumbotron bg-transparent text-white shadow-lg p-3 mb-5 bg-white rounded">
+    <h1 class="display-4">Bienvenido a ZomBreX Entertainment.</h1>
+    <p class="lead">Bienvenido a mi proyecto personal, espero que tengas una buena estancia y consigas encontrar todo aquello que buscas.</p>
+    <hr class="my-4">
+  </div>
+  <div id="c" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+        <li data-target="#c" data-slide-to="0" class="active"></li>
+        <li data-target="#c" data-slide-to="1"></li>
+        <li data-target="#c" data-slide-to="2"></li>
+        <li data-target="#c" data-slide-to="3"></li>
+    </ol>
+
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center">
+            <a href="/about">
+              <img class="d-block w-70" src="https://media.discordapp.net/attachments/931640602490187866/932645334612578394/ezgif-5-5a4925438c.gif" alt="Primer Slide" class="animate__zoomIn">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+                <h3>¡Bienvenido a ZomBreX!</h3>
+                <p>Aquí obtendrá más información del desarrollo de nuestros proyectos.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <a href="/zombot">
+              <img class="d-block w-70" src="https://c.tenor.com/oS0d558B98MAAAAC/discord-robot.gif" alt="Segundo Slide">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+                <h3>ZomBot</h3>
+                <p>Bot desarrollado para simplificar tareas en el día a día en discord.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <a href="/crypto">
+              <img class="d-block w-70" src="https://media.discordapp.net/attachments/931640602490187866/932673203241898034/ezgif.com-gif-maker.gif" alt="Tercer Slide">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+                <h3>Crypto$</h3>
+                <p>Bot de discord para el seguimiento de criptodivisas.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <a href="/zombeats">
+              <img class="d-block w-70" src="https://media.discordapp.net/attachments/931640602490187866/932676631158480916/ezgif.com-gif-maker_2.gif" alt="Tercer Slide">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+                <h3>ZomBeats</h3>
+                <p>Bot multimedia y con sistema de niveles creado para discord.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <a href="#c" class="carousel-control-prev" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+
+    <a href="#c" class="carousel-control-next" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    
+  </div>
+
+<div class="jumbotron bg-transparent text-white shadow-lg p-3 mb-5 bg-white rounded mt-5">
+  <iframe src="https://discord.com/widget?id=859574854575587350&theme=dark" class="dframe" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+</div>
+{% endblock %}

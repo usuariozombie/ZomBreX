@@ -1,0 +1,125 @@
+body{
+    background-image: url("https://giffiles.alphacoders.com/178/17836.gif");  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+    text-align: center;
+}
+.bg-custom-1{
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.8;
+    text-align: left;
+}
+.bg-custom-2{
+    background: #360033;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #203b70, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #203b70, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */      
+}
+.bg-custom-3{
+    background: #360033;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #203b70, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #203b70, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */      
+}
+.bg-button{
+    background: #0b040f57
+}
+
+.card {
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #E1BEE7;
+    transform: scaleY(1);
+    transition: all 0.5s;
+    transform-origin: bottom
+}
+
+.card:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #8E24AA;
+    transform: scaleY(0);
+    transition: all 0.5s;
+    transform-origin: bottom
+}
+
+.card:hover::after {
+    transform: scaleY(1)
+}
+
+.fonts {
+    font-size: 11px
+}
+
+.social-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0
+}
+
+.social-list li {
+    padding: 10px;
+    color: #8E24AA;
+    font-size: 19px
+}
+
+.buttons button:nth-child(1) {
+    border: 1px solid #8E24AA !important;
+    color: #8E24AA;
+    height: 40px
+}
+
+.buttons button:nth-child(1):hover {
+    border: 1px solid #8E24AA !important;
+    color: #fff;
+    height: 40px;
+    background-color: #8E24AA
+}
+
+.buttons button:nth-child(2) {
+    border: 1px solid #8E24AA !important;
+    background-color: #8E24AA;
+    color: #fff;
+    height: 40px
+}
+
+.fa-instagram:hover {
+    color: royalblue;
+}
+
+.fa-youtube:hover {
+    color: royalblue;
+}
+
+.fa-twitter:hover {
+    color: royalblue;
+}
+
+.fa-github:hover {
+    color: royalblue;
+}
+
+.dframe {
+    width: 100%;
+}

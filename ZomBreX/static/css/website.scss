@@ -1,0 +1,35 @@
+$bgColor: #3df;
+$fontSize: 1rem;
+
+@mixin transition($time: 0.3s) {
+    transition: all $time ease-in-out;
+}
+
+body {
+    background-color: $bgColor;
+}
+
+.usu {
+    position: relative;
+    background-color: #dfdfdf;
+    width: 150px;
+    height: 150px;
+
+    .nick {
+        background-color: #3633ff;
+        width: 50px;
+        height: 50px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @include transition();
+
+        &:hover {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
